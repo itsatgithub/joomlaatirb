@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>IRBtools</name>
+    <author>IRB Barcelona</author>
+    <creationDate>2015-03-02</creationDate>
+    <license>GNU/GPL</license>
+    <version>1.62</version>
+    <description>
+    	IRB Barcelona Tools. Ticket Peticiones Roaming de David en Redbooth
+    </description>
+
+    <!-- installation part -->
+	<installfile>install.irbtools.php</installfile>
+	<uninstall>
+	   <sql>
+	      <file driver="mysql">uninstall.irbtools.sql</file>
+	   </sql>
+	</uninstall>
+	
+    <!-- user part -->
+    <files folder="components/com_irbtools">
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <folder>css</folder>
+        <folder>helpers</folder>
+        <folder>images</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <filename>index.html</filename>
+        <filename>irbtools.php</filename>
+        <filename>router.php</filename>
+    </files>
+
+    <languages folder="language/en-GB">
+        <language tag="en-GB">en-GB.com_irbtools.ini</language>
+    </languages>
+
+    <!-- administration part -->
+    <administration>
+
+	    <menu task="default" img="js/ThemeOffice/component.png">IRBtools</menu>
+	    <submenu>
+	        <menu link="option=com_irbtools">Control Panel</menu>
+	        <menu link="option=com_irbtools&amp;view=version">Version</menu>
+	    </submenu>
+	
+	    <files>
+	        <filename>irbtools.xml</filename>
+	    </files>
+	    <files folder="administrator/components/com_irbtools">
+	        <folder>controllers</folder>
+	        <folder>helpers</folder>
+	        <folder>models</folder>
+			<folder>sql</folder>
+	        <folder>tables</folder>
+	        <folder>views</folder>
+	        <filename>config.xml</filename>
+	        <filename>controller.php</filename>
+	        <filename>index.html</filename>
+	        <filename>install.irbtools.php</filename>
+	        <filename>irbtools.php</filename>
+	        <filename>uninstall.irbtools.sql</filename>
+	    </files>
+	
+	    <languages folder="administrator/language/en-GB">
+	        <language tag="en-GB">en-GB.com_irbtools.menu.ini</language>
+	        <language tag="en-GB">en-GB.com_irbtools.ini</language>
+	    </languages>
+
+    </administration>
+
+    <params>
+
+    </params>
+
+</install>

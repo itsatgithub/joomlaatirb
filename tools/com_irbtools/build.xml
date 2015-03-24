@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Tools for IRB Barcelona" default="makezip" basedir=".">
+          
+	<!--
+	  =========================================================================  
+	  Inclusion of optional overall project properties. 
+	  =========================================================================  
+	-->
+    <property file="build.properties" />
+	
+	<!--
+	  =========================================================================  
+	   Build file wide properties used in the targets below
+	  =========================================================================  
+	-->
+	<!-- Useful to make the current buildtime available as a property -->
+	<tstamp>
+	    <format property="buildtime" pattern="%Y-%m-%d"/>
+	</tstamp>
+
+	<!-- define a fileset for php sources. -->  
+	<fileset dir="${work.dir}" id="dev.sources">  
+		<include name="administrator/components/${project}/**"/>  
+		<include name="administrator/language/en-GB/*${project}*"/> 
+		<include name="components/${project}/**"/>  
+		<include name="language/en-GB/*${project}*"/>  
+		<exclude name="**/.svn/**"/>  
+		<exclude name="*~"/>  
+	</fileset>
+
+	<!-- define a fileset for zip sources, this includes ALL the files -->  
+	<fileset dir="${build.dir}" id="zip.sources">  
+		<include name="administrator/components/${project}/**"/>  
+		<include name="administrator/language/en-GB/*${project}*"/> 
+		<include name="components/${project}/**"/>  
+		<include name="language/en-GB/*${project}*"/>  
+		<include name="${name}.xml"/> 
+		<exclude name="**/.svn/**"/>  
+		<exclude name="*~"/>  
+	</fileset>
+
+	<!--
+	  =========================================================================  
+	  Targets
+	  =========================================================================  
+	-->
+
+    <target name="deletebuilddir">
+        <delete dir="${build.dir}" includeemptydirs="true" 
+        	verbose="false" failonerror="true" />
+    </target>
+
+    <target name="createbuilddir" depends="deletebuilddir">
+        <mkdir dir="${build.dir}" />
+    </target>
+ 
+	<!-- it does not remove the zip folder -->  
+    <target name="createzipsdir">
+		<echo message="Creating ${zips.dir} if needed" />
+        <mkdir dir="${zips.dir}" />
+    </target>
+
+	<!-- it makes the install file for Joomla -->  
+	<target name="makezip" depends="build,createzipsdir" description="Create zip file.">  
+		<echo msg="Creating zip files" />
+		<!-- using the timestamp -->  
+		<zip destfile="${zips.dir}/${project}-${buildtime}.zip">
+			<fileset refid="zip.sources" />
+		</zip>
+		<!-- last release, for the update functionality -->
+        <copy file="${zips.dir}/${project}-${buildtime}.zip"
+        	tofile="${zips.dir}/${project}.zip" overwrite="true" />
+	</target>
+	
+	<!-- @todo Este target deberia de traer los ficheros de svn con svnexport o algo similar -->
+	
+    <target name="build" depends="createbuilddir">
+		<echo message="Copying files from ${work.dir} to ${build.dir}" />
+        <copy todir="${build.dir}">
+            <fileset refid="dev.sources" />
+        </copy>
+        <copy file="${work.dir}/administrator/components/${project}/${name}.xml"
+        	tofile="${build.dir}/${name}.xml" overwrite="true" />
+    </target>
+        
+    <target name="help" description="Help text.">
+    	<echo>Usage: phing [target]</echo>
+		<echo>Execute the phing command whith specific targets.</echo>
+		<echo>Available targets are:</echo>
+		<echo>	makezip:		Default. Create zip files in ${zips.dir}</echo>
+		<echo>	build:			Checkout files from SVN to ${build.dir}</echo>
+	</target>
+	    
+</project>

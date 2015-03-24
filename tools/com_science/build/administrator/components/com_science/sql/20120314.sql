@@ -1,0 +1,1 @@
+ALTER TABLE `jos_sci_projects` CHANGE `irb_code` `irb_code` VARCHAR( 30 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

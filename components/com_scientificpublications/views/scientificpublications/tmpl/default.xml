@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Scientific Publications List Layout">
+		<message>
+			<![CDATA[Scientific Publications List Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Scientific Publications List</name>
+		<description>List all Scientific Publications. Possibility to filter
+			them by type of publication and to show its type or not.</description>
+		<url>
+
+		</url>
+		<params>
+			<param name="filter_paper_type" type="radio" default="1"
+				label="Filter Display Paper Type" description="Filter Display Paper Type">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="sql" name="paper_type" label="Select Papers to display"
+				description="Congress to display"
+				query="SELECT id as value, description AS paper_type FROM #__ga_publication_types">
+			</param>
+			<param name="display_paper_type" type="radio" default="1"
+				label="Display Paper Type" description="Manage Paper Type">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+		</params>
+		<advanced>
+
+		</advanced>
+	</state>
+</metadata>

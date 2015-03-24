@@ -1,0 +1,1 @@
+ALTER TABLE `jos_sci_journal_impact_factors` ADD `quartile` VARCHAR( 2 ) NOT NULL DEFAULT ''

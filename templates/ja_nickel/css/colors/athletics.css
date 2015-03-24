@@ -1,0 +1,516 @@
+body {
+	background: #950F00;
+	color: #000000;
+} 
+
+body#bd {
+	background: url(../../images/athletics/mw-bg.gif) repeat-x left top #950F00;
+	color: #555555;
+}
+
+div.ja-mainbg {
+	background: url(../../images/athletics/mainwrap-bg.jpg) no-repeat center top;
+}
+
+a {
+	color: #CC8E00;
+}
+
+.img_caption img,
+.img-desc img {
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+/*joomla style*/
+a.readon:hover, a.readon:focus, a.readon:active {
+	background: url(../../images/athletics/readon-hover.gif) no-repeat left center;
+	color: #CC8E00;
+}
+
+#ja-contentheading h1.componentheading {
+	background: url(../../images/athletics/h3-bg.gif) no-repeat left bottom;
+}
+
+#ja-contentheading h1.componentheading span.left-bg {
+	background: url(../../images/athletics/span-left.gif) no-repeat right bottom;
+	padding: 10px 55px 12px 10px;
+}
+
+#ja-contentheading h1.componentheading span.right-bg {
+	background: none;
+}
+
+#ja-contentheading div.blog {
+	background: #FAF9F5;
+	border: 1px solid #CCCCCC;
+}
+
+#ja-contentheading div.leading {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+tr.sectiontableentry0 td,
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+tr.sectiontableentry2 td {
+	background: #FFFFFF;
+}
+
+.article-meta,
+.createdby {
+	color: #B68500;
+}
+
+.createdate {
+	background: url(../../images/athletics/vline.gif) no-repeat right center;
+}
+
+h1.logo a {
+	background: url(../../images/athletics/logo.png) no-repeat center;
+}
+
+#ja-mainnav .inner {
+	background: url(../../images/athletics/mainnav-bg.gif) repeat-x left top #333333;
+	border-bottom: 1px solid #000000;
+}
+
+#ja-headtools {
+	background: url(../../images/athletics/ht-bg.gif) no-repeat left center;
+}
+
+#ja-headtools li a.login-switch {
+	background: url(../../images/athletics/login-bg.gif) no-repeat left center;
+}
+
+#ja-headtools li a.register-switch {
+	background: url(../../images/athletics/sign-bg.gif) no-repeat left center;
+}
+
+div.ja-headtool a.logout-switch {
+	background: url(../../images/athletics/logout-bg.gif) no-repeat left top;
+	color: #CCCCCC;
+}
+
+div.ja-headtool a.logout-switch:hover,
+div.ja-headtool a.logout-switch:focus,
+div.ja-headtool a.logout-switch:active {
+	color: #FFFFFF;
+}
+
+#ja-topsl .inner {
+	background: url(../../images/athletics/topsl-bg.gif) repeat-y left top;
+}
+
+#ja-hl div.moduletable .img-border {
+	border: 5px solid #CC8E00;
+	margin-top: -1px;
+}
+
+#ja-hl div.moduletable h3 {
+	background: url(../../images/athletics/hl-h3-bg.gif) no-repeat right center;
+}
+
+#ja-hl div.moduletable h3 span.left-bg {
+	background: url(../../images/athletics/hl-span-r.gif) no-repeat left center;
+}
+
+#ja-hl div.moduletable h3 span.right-bg {
+	background: none;
+}
+
+#ja-hl div.moduletable div.ja-box-ct {
+	background: none;
+	border: none;
+}
+
+#ja-pathway .inner {
+	background: #111111;
+	border-top: 1px solid #111111;
+	border-bottom: 1px solid #111111;
+}
+
+#ja-pathway .ja-pathway-text {
+	background: none;
+}
+
+#ja-pathway strong {
+	color: #B68500;
+}
+
+#ja-search {
+	background: url(../../images/athletics/search-bg.gif) no-repeat left center;
+}
+
+#ja-search .button {
+	background: url(../../images/athletics/bsearch-bg.gif) no-repeat left center;
+}
+
+#ja-container,
+#ja-container-fr,
+#ja-container-fl,
+#ja-container-f {
+	background: url(../../images/athletics/container-bg.gif) repeat-x left bottom;
+}
+
+#ja-current-content {
+	background: url(../../images/athletics/cc-bg.gif) repeat-y 5px top;
+}
+
+#ja-container-f #ja-current-content {
+	background: url(../../images/athletics/cc-bg2.gif) repeat-y center top;
+}
+
+#ja-subnav a,
+ul.menu li a {
+	background: url(../../images/arrow-grey.gif) no-repeat left center;
+	color: #555555;
+}
+
+#ja-subnav a:hover,
+#ja-subnav a:active,
+#ja-subnav a:focus,
+ul.menu li a:hover,
+ul.menu li a:active,
+ul.menu li a:focus {
+	background: url(../../images/athletics/arrow-hover.gif) no-repeat left center;
+	color: #CC8E00;
+}
+
+#ja-subnav li.active a,
+ul.menu li.active a {
+	color: #CC8E00;
+}
+
+div.moduletable h3,
+div.moduletable_default h3,
+div.moduletable_menu h3,
+div.moduletable_text h3,
+div.moduletable_blank h3,
+div.moduletable_tabs h3 {
+	background: url(../../images/athletics/h3-bg.gif) no-repeat left bottom;
+	color: #FFFFFF;
+}
+
+div.moduletable h3 span.left-bg,
+div.moduletable_menu h3 span.left-bg,
+div.moduletable_default h3 span.left-bg,
+div.moduletable_text h3 span.left-bg,
+div.moduletable_tabs h3 span.left-bg {
+	background: url(../../images/athletics/span-left.gif) no-repeat right bottom;
+}
+
+div.moduletable h3 span.right-bg,
+div.moduletable_default h3 span.right-bg,
+div.moduletable_menu h3 span.right-bg,
+div.moduletable_text h3 span.right-bg,
+div.moduletable_tabs h3 span.right-bg {
+	background: none;
+}
+
+div.ja-box-ct,
+#ja-cs div.ja-box-ct {
+	background: #FAF9F5;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+}
+
+div.moduletable_blank div.ja-box-ct {
+	background: none;
+	border: none;
+}
+
+#ja-botsl div.moduletable div.ja-box-ct {
+	background: none;
+	border: none;
+}
+
+#ja-botsl div.moduletable h3 {
+	border-bottom: 1px solid #CC8E00;
+}
+
+#ja-botsl a:hover,
+#ja-botsl a:focus,
+#ja-botsl a:active {
+	color: #FFFFFF;
+}
+
+#ja-botsl ul.menu li a:hover,
+#ja-botsl ul.menu li a:active,
+#ja-botsl ul.menu li a:focus {
+	background: url(../../images/athletics/arrow-white.gif) no-repeat left center;
+}
+
+#ja-botsl ul.menu li.active a {
+	background: url(../../images/athletics/arrow-white.gif) no-repeat left center;
+	color: #FFFFF;
+}
+
+#ja-footer a:hover, #ja-footer a:active, #ja-footer a:focus,
+#ja-footer li a:hover,
+#ja-footer li a:focus,
+#ja-footer li a:active {
+	color: #FFFFFF;
+}
+
+#ja-register, #ja-search, #ja-login {
+	color: #CC8E00;
+}
+
+/*ja contentslider*/
+#ja-contentslider-center-wrap {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+div.ja_slideimages .caption {
+	border: 1px solid #CCCCCC;
+}
+
+/*ja tabs*/
+#ja-colwrap div.moduletable_tabs {
+	border: none !important;
+	background: none;
+}
+
+.ja-tabswrap {
+	background: #FAF9F5;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	border-bottom: none;
+}
+
+.nickel .ja-tabs-title-top {
+	background: url(../../images/athletics/title-top-bg.gif) repeat-x left bottom #333333;
+}
+
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.active,
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(../../images/athletics/active-top-r.gif) no-repeat right bottom;
+}
+
+.nickel .ja-tabs-title-top ul li.active h3,
+.nickel .ja-tabs-title-top ul li.firstactive h3,
+.nickel .ja-tabs-title-top ul li.lastactive h3 {
+	background: url(../../images/athletics/active-top-l.gif) no-repeat left bottom !important;
+}
+
+.nickel .ja-tab-panels-bottom {
+	border-top: 1px solid #CCCCCC;
+}
+
+.nickel .ja-tabs-title-bottom {
+	background: url(../../images/athletics/title-bot-bg.gif) repeat-x left top;
+}
+
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(../../images/athletics/active-bot-r.gif) no-repeat right top;
+}
+
+.nickel .ja-tabs-title-bottom ul li.active h3,
+.nickel .ja-tabs-title-bottom ul li.firstactive h3,
+.nickel .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: url(../../images/athletics/active-bot-l.gif) no-repeat left top;
+}
+
+/*ja news*/
+#ja-news div.moduletable div.ja-box-ct {
+	background: #FAF9F5;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+}
+
+div.jazin-section a span {
+	background: url(../../images/athletics/arrow-r.gif) no-repeat right center;
+}
+
+.jazin-box {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+ul.jazin-links li a:hover,
+ul.jazin-links li a:active,
+ul.jazin-links li a:focus {
+	background: url(../../images/athletics/bullet-hover.gif) no-repeat 1px 7px;
+	color: #CC8E00;
+}
+
+/*typography*/
+pre, .code {
+	background: #FFFFFF;
+	border-left: 5px solid #CC8E00;
+}
+
+blockquote span.open {
+	background: url(../../images/athletics/so-q.gif) no-repeat left top;
+}
+
+blockquote span.close {
+	background: url(../../images/athletics/sc-q.gif) no-repeat bottom right;
+}
+
+ul.checklist li {
+	background: url(../../images/athletics/icon-checklist.gif) no-repeat 0 4px !important;
+}
+
+ul.arrow li {
+	background: url(../../images/athletics/icon-arrow.gif) no-repeat 3px 5px;
+}
+
+p.stickynote {
+	background: url(../../images/icon-sticky.png) no-repeat left top #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+.dropcap {
+	color: #CC8E00;
+}
+
+.highlight {
+	color: #CC8E00;
+	background: #FFFFFF;
+}
+
+p.download {
+	background: url(../../images/icon-download.png) no-repeat left top #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+.bignumber {
+	background: url(../../images/athletics/ol-bg.gif) no-repeat top left;
+}
+
+div.bubble1 div {
+	background: url(../../images/athletics/bub1-br.gif) no-repeat bottom right;
+}
+
+div.bubble1 div div {
+	background: url(../../images/athletics/bub1-bl.gif) no-repeat bottom left;
+}
+
+div.bubble1 div div div {
+	background: url(../../images/athletics/bub1-tr.gif) no-repeat top right;
+}
+
+div.bubble1 div div div div {
+	background: url(../../images/athletics/bub1-tl.gif) no-repeat top left;
+}
+
+div.bubble2 div {
+	background: url(../../images/athletics/bub2-br.gif) no-repeat bottom right;
+}
+
+div.bubble2 div div {
+	background: url(../../images/athletics/bub2-bl.gif) no-repeat bottom left;
+}
+
+div.bubble2 div div div {
+	background: url(../../images/athletics/bub2-tr.gif) no-repeat top right;
+}
+
+div.bubble2 div div div div {
+	background: url(../../images/athletics/bub2-tl.gif) no-repeat top left;
+}
+
+div.bubble3 div {
+	background: url(../../images/athletics/bub3-br.gif) no-repeat bottom right;
+}
+
+div.bubble3 div div {
+	background: url(../../images/athletics/bub3-bl.gif) no-repeat bottom left;
+}
+
+div.bubble3 div div div {
+	background: url(../../images/athletics/bub3-tr.gif) no-repeat top right;
+}
+
+div.bubble3 div div div div {
+	background: url(../../images/athletics/bub3-tl.gif) no-repeat top left;
+}
+
+div.bubble4 div {
+	background: url(../../images/athletics/bub4-br.gif) no-repeat bottom right;
+}
+
+div.bubble4 div div {
+	background: url(../../images/athletics/bub4-bl.gif) no-repeat bottom left;
+}
+
+div.bubble4 div div div {
+	background: url(../../images/athletics/bub4-tr.gif) no-repeat top right;
+}
+
+div.bubble4 div div div div {
+	background: url(../../images/athletics/bub4-tl.gif) no-repeat top left;
+}
+
+.legend-title {
+	background: #FAF9F5;
+	color: #CC8E00;
+}
+
+.legend {
+	border: 1px solid #CCCCCC;
+}
+
+/*split menu*/
+#ja-splitmenu a {
+	background: url(../../images/athletics/mainnav-sep.gif) no-repeat right top;
+	color: #666666;
+}
+
+#ja-splitmenu a:hover,
+#ja-splitmenu a:active,
+#ja-splitmenu a:focus {
+	color: #999999;	
+}
+
+#ja-splitmenu li.active {
+	background: url(../../images/athletics/mainnav-active-r.gif) no-repeat right top;	
+}
+
+#ja-splitmenu li.active a {
+	background: url(../../images/athletics/mainnav-active-l.gif) no-repeat left top;
+}
+
+/*css menu*/
+#ja-cssmenu li a {
+	background: url(../../images/athletics/mainnav-sep.gif) no-repeat right top;
+	color: #666666;
+}
+
+#ja-cssmenu li a:hover,
+#ja-cssmenu li a:active,
+#ja-cssmenu li a:focus {
+	color: #999999;
+}
+
+#ja-cssmenu li.active {
+	background: url(../../images/athletics/mainnav-active-r.gif) no-repeat right top;	
+}
+
+#ja-cssmenu li.active a {
+	background: url(../../images/athletics/mainnav-active-l.gif) no-repeat left top;
+	color: #FFFFFF;
+}
+
+#ja-cssmenu li ul a:hover,
+#ja-cssmenu li ul a:active,
+#ja-cssmenu li ul a:focus,
+#ja-cssmenu ul li:hover,
+#ja-cssmenu ul li.sfhover,
+#ja-cssmenu ul li.havesubchildsfhover,
+#ja-cssmenu ul li.havesubchild-activesfhover,
+#ja-cssmenu ul ul li:hover,
+#ja-cssmenu ul ul li.sfhover,
+#ja-cssmenu ul ul li.havesubchildsfhover,
+#ja-cssmenu ul ul li.havesubchild-activesfhover {
+	background: #000000;
+	color: #FFFFFF !important;
+}
+

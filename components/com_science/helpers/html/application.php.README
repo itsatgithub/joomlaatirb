@@ -1,0 +1,9 @@
+Author: Roberto Bartolomé
+Date: 2014-03-05
+
+In order to implement the automatic block of users when they fail 3 or more login attempts
+the file application.php of the Joomla core has been modified. So when installing 
+the com_science component it is needed to manually install the modified file by executing the command:
+
+$ cp components/com_science/helpers/html/application.php.tobeinstalled \
+libraries/joomla/application/application.php

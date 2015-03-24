@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>ScientificPublications</name>
+	<author>Gplavui</author>
+	<creationDate>01/03/2010</creationDate>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>Application to manage scientific publications on ajoomla
+		site</description>
+
+	<!-- installation part -->
+	<install>
+		<queries>
+
+		</queries>
+	</install>
+
+	<installfile>install.scientificpublications.php</installfile>
+	<uninstallfile>uninstall.scientificpublications.php</uninstallfile>
+
+	<!-- user part -->
+	<files folder="components/com_scientificpublications">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>scientificpublications.php</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.com_scientificpublications.ini</language>
+	</languages>
+
+	<!-- administration part -->
+	<administration>
+
+		<menu task="default" img="js/ThemeOffice/component.png">Scientific Publications</menu>
+		<submenu>
+			<menu link="option=com_scientificpublications&view=publications">Manager</menu>
+		</submenu>
+
+		<files>
+			<filename>scientificpublications.xml</filename>
+		</files>
+		<files folder="administrator/components/com_scientificpublications">
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.scientificpublications.php</filename>
+			<filename>scientificpublications.php</filename>
+			<filename>uninstall.scientificpublications.php</filename>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<languages folder="administrator/language/en-GB">
+			<language tag="en-GB">en-GB.com_scientificpublications.menu.ini</language>
+			<language tag="en-GB">en-GB.com_scientificpublications.ini</language>
+		</languages>
+
+	</administration>
+
+	<params>
+
+	</params>
+
+</install>

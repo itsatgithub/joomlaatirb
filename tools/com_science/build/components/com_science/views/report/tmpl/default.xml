@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Report Default Layout">
+		<message>
+			<![CDATA[REPORT LAYOUT DESCRIPTION]]>
+		</message>
+	</layout>
+	<state>
+		<name>Report Layout</name>
+		<description>REPORT LAYOUT DESCRIPTION</description>
+		<url>
+
+		</url>
+		<params>
+
+		</params>
+		<advanced>
+
+		</advanced>
+	</state>
+</metadata>

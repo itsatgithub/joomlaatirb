@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Thesis Default Layout">
+		<message>
+			<![CDATA[THESIS DEFAULT LAYOUT DESCRIPTION]]>
+		</message>
+	</layout>
+	<state>
+		<name>Thesis Default Layout</name>
+		<description>THESIS DEFAULT LAYOUT DESCRIPTION</description>
+		<url>
+
+		</url>
+		<params>
+
+		</params>
+		<advanced>
+
+		</advanced>
+	</state>
+</metadata>

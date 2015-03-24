@@ -1,0 +1,1 @@
+ALTER TABLE `jos_sci_projects` ADD `comments` VARCHAR( 255 ) NULL 

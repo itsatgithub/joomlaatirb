@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - JCron</name>
+	<version>1.4.1</version>
+	<creationDate>07 January 2010</creationDate>
+    <author>JoomlaPlug.com</author>
+    <authorEmail>admin@joomlaplug.com</authorEmail>
+    <authorUrl>http://www.joomlaplug.com</authorUrl>
+    <copyright>2006 JoomlaPlug.com</copyright>
+    <license>GNU General Public License</license>
+	<description>This is the JCron plugin for running cronjobs, you need to keep this enabled.</description>
+	<files>
+		<filename plugin="jcron">jcron.php</filename>
+		<folder>jcron</folder>
+	</files>
+	<params/>
+</install>

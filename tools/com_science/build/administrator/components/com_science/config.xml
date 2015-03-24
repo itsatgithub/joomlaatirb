@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="scienceConfig_ImpactFactorStartYear" type="text"
+			default="2008" label="Impact factor start year" description="Impact factor start year"
+			size="4" />
+		<param name="scienceConfig_ImpactFactorEndtYear" type="text"
+			default="2028" label="Impact factor end year" description="Impact factor end year"
+			size="4" />
+		<param name="@spacer" type="spacer" default="" label="Email"
+			description="Email" />
+		<param name="send_emails" type="radio" default="0"
+			label="Send confirmation emails?" description="Send confirmation emails?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="scienceConfig_MaxPublicationsExtranet" type="text" default="6"
+			label="Maximum number of publications on the extranet"
+			description="Maximum number of publications on the extranet" size="2" />
+		<param name="@spacer" type="spacer" default="" label="Permissions"
+			description="Permissions" />
+		<param name="scienceConfig_AllowedUser" type="text" default=""
+			label="Allowed user"
+			description="Allowed user to publish data before the year limit" size="25" />
+		<param name="scienceConfig_YearLimit" type="text"
+			default="2013" label="Year limit" description="Year limit to publish content"
+			size="4" />
+	</params>
+</config>

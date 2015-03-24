@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="google_domain" type="text" default="" label="DOMAIN LABEL"
+			description="DOMAIN DESC" />
+		<param name="google_user" type="text" default="" label="USER LABEL"
+			description="USER DESC" />
+		<param name="google_password" type="text" default=""
+			label="PASSWORD LABEL" description="PASSWORD DESC" />
+	</params>
+</config>

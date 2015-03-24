@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params>
+		<param name="irbtoolsConfig_InstallUrl" type="text" default="" label="Install Url" description="Install Url" size="255" />
+		<param name="@spacer" type="spacer" default="" label="Google" description="Google" />
+		<param name="irbtoolsConfig_GoogleDomain" type="text" default="" label="Google domain" description="Google domain" size="50" />
+		<param name="irbtoolsConfig_GoogleUser" type="text" default="" label="Google user name" description="Google user name" size="50" />
+		<param name="irbtoolsConfig_GooglePass" type="text" default="" label="Google password" description="Google password" size="50" />
+		<param name="irbtoolsConfig_GoogleMailRecipients" type="text" default="" label="Email to receive the Email information" description="Email list to send the information concerning the Google email account" size="100" />
+		<param name="@spacer" type="spacer" default="" label="Google Directory API" description="Google Directory API" />
+		<param name="irbtoolsConfig_GoogleClientId" type="text" default="" label="Google client id" description="Client id assigned to the Google Directory API" size="100" />
+		<param name="irbtoolsConfig_GoogleServiceAccountName" type="text" default="" label="Google account name" description="Account name assigned to the Google Directory API" size="100" />
+		<param name="irbtoolsConfig_GoogleKeyFileLocation" type="text" default="" label="Google key file location" description="Full path for the rivate key file" size="50" />
+		<param name="irbtoolsConfig_GoogleDelegatedAdmin" type="text" default="" label="Google delegated admin" description="Admin account associated to the API" size="50" />
+		<param name="@spacer" type="spacer" default="" label="LDAP" description="LDAP" />
+		<param name="irbtoolsConfig_LdapServer" type="text" default="" label="Ldap server" description="Ldap server name" size="255" />
+		<param name="irbtoolsConfig_LdapRdn" type="text" default="" label="Ldap rdn" description="Ldap rdn" size="255" />
+		<param name="irbtoolsConfig_LdapPass" type="text" default="" label="Ldap password" description="Ldap password" size="255" />
+		<param name="irbtoolsConfig_LdapRoot" type="text" default="" label="Root dir" description="Root dir" size="255" />
+		<param name="@spacer" type="spacer" default="" label="Email" description="Email" />
+		<param name="irbtoolsConfig_Lista1" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="irbtoolsConfig_Lista2" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="irbtoolsConfig_Lista3" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="irbtoolsConfig_Lista4" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="irbtoolsConfig_Lista5" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="irbtoolsConfig_Lista6" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="irbtoolsConfig_Lista7" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="irbtoolsConfig_Lista8" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="irbtoolsConfig_Lista9" type="text" default="" label="List to subscribe" description="Google list" size="50" />
+		<param name="@spacer" type="spacer" default="" label="Email" description="Email" />
+		<param name="irbtoolsConfig_EmailSubject" type="text" default="" label="Email subject" description="Email subject" size="50" />
+		<param name="irbtoolsConfig_EmailBody" type="textarea" default="" label="Email body" rows="3" cols="50" description="Email body" />
+		<param name="@spacer" type="spacer" default="" label="Email" description="Email" />
+		<param name="irbtoolsConfig_DirmanagerEmailSubject" type="text" default="" label="Directory manager Email subject" description="Email subject" size="50" />
+		<param name="irbtoolsConfig_DirmanagerEmailBody" type="textarea" default="" label="Directory manager Email body" rows="3" cols="50" description="Email body" />
+		<param name="@spacer" type="spacer" default="" label="Private files" description="Private files" />
+		<param name="irbtoolsConfig_Panic" type="radio" default="0"
+			label="Panic! (do not show files)" description="Panic! (do not show files)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="irbtoolsConfig_PrivateFilesFolder" type="text" default="" label="Private files folder" description="Private files folder" size="255" />
+		<param name="@spacer" type="spacer" default="" label="IRBPeople to extranet" description="IRBPeople to extranet" />
+		<param name="irbtoolsConfig_IRBPeopleMailRecipients" type="text" default="" label="Email to receive the IRBPeople data file" description="Email list to send the IRBPeople data file" size="100" />
+		<param name="@spacer" type="spacer" default="" label="IRBScience to extranet" description="IRBScience to extranet" />
+		<param name="irbtoolsConfig_ScienceMailRecipients" type="text" default="" label="Email to receive the Science data file" description="Email list to send the Science data file" size="100" />
+		<param name="@spacer" type="spacer" default="" label="Roaming manager" description="Roaming manager" />
+		<param name="irbtoolsConfig_NumberOfDays" type="text" default="4" label="Number of days to compare" description="Number of days to compare" size="1" />
+		<param name="irbtoolsConfig_RoamingTopText" type="textarea" default="" label="Roaming top text" rows="3" cols="50" description="Roaming top text" />
+		<param name="irbtoolsConfig_RoamingEmailRecipients" type="text" default="" label="Emails list to receive the roaming request email" description="Emails list to receive the roaming request email" size="100" />
+		<param name="irbtoolsConfig_RoamingEmailReplyTo" type="text" default="" label="Emails list to reply to the roaming request email" description="Emails list to reply to the roaming request email" size="100" />
+		<param name="irbtoolsConfig_RoamingEmailCc" type="text" default="" label="Emails list to CC" description="Emails list to CC" size="100" />
+		<param name="irbtoolsConfig_RoamingEmailSubject" type="text" default="" label="Subject Roaming Email to Movistar" description="Email subject" size="50" />
+		<param name="irbtoolsConfig_RoamingEmailBody" type="textarea" default="" label="Body Roaming Email to Movistar" rows="3" cols="50" description="Email body" />
+		<param name="irbtoolsConfig_RoamingUserEmailSubject" type="text" default="" label="Subject Roaming Email to user" description="Email subject" size="50" />
+		<param name="irbtoolsConfig_RoamingUserEmailBody" type="textarea" default="" label="Body Roaming Email to user" rows="3" cols="50" description="Email body" />
+		<param name="irbtoolsConfig_DelayedRoamingUserEmailSubject" type="text" default="" label="Subject Delayed Roaming Email to user" description="Email subject" size="50" />
+		<param name="irbtoolsConfig_DelayedRoamingUserEmailBody" type="textarea" default="" label="Body Delayed Roaming Email to user" rows="3" cols="50" description="Email body" />
+    </params>
+</config>

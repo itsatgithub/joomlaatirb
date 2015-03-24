@@ -1,0 +1,1 @@
+UPDATE `jos_sci_group_leaders` SET `research_programme` = 'Molecular Medicine' WHERE `jos_sci_group_leaders`.`id` =6;

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5" method="upgrade">
+	<name>Science</name>
+	<author>GPL@vui</author>
+	<creationDate>2015-02-10</creationDate>
+	<license>GNU/GPL</license>
+	<version>1.80</version>
+	<description>La vista por defecto es la de publications.</description>
+
+	<!-- installation part -->
+	<installfile>install.science.php</installfile>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.science.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- administration part -->
+	<administration>
+		<menu task="default" img="js/ThemeOffice/component.png">Science</menu>
+		<submenu>
+			<menu link="option=com_science&amp;view=journals">Journals</menu>
+			<menu link="option=com_science&amp;view=publications">Manage publications</menu>
+			<menu link="option=com_science&amp;view=version">Version</menu>
+		</submenu>
+
+		<files>
+			<filename>science.xml</filename>
+		</files>
+		<files folder="administrator/components/com_science">
+			<folder>controllers</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>install.science.php</filename>
+			<filename>science.php</filename>
+			<filename>uninstall.science.sql</filename>
+		</files>
+		<languages folder="administrator/language/en-GB">
+			<language tag="en-GB">en-GB.com_science.menu.ini</language>
+			<language tag="en-GB">en-GB.com_science.ini</language>
+		</languages>
+	</administration>
+
+	<!-- user part -->
+	<files folder="components/com_science">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>science.php</filename>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.com_science.ini</language>
+	</languages>
+
+	<params>
+	</params>
+</install>

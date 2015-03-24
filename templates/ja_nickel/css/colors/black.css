@@ -1,0 +1,499 @@
+body {
+	background: #DDDDDD;
+	color: #000000;
+} 
+
+body#bd {
+	background: url(../../images/black/mw-bg.gif) repeat-x left top #DDDDDD;
+	color: #555555;
+}
+
+div.ja-mainbg {
+	background: url(../../images/black/mainwrap-bg.jpg) no-repeat center top;
+}
+
+a {
+	color: #CC0000;
+}
+
+.img_caption img,
+.img-desc img {
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+/*joomla style*/
+a.readon:hover, a.readon:focus, a.readon:active {
+	background: url(../../images/black/readon-hover.gif) no-repeat left center;
+	color: #CC0000;
+}
+
+#ja-contentheading h1.componentheading {
+	background: url(../../images/black/h3-bg.gif) no-repeat left bottom;
+}
+
+#ja-contentheading h1.componentheading span.left-bg {
+	background: url(../../images/black/span-left.gif) no-repeat right bottom;
+}
+
+#ja-contentheading h1.componentheading span.right-bg {
+	background: none;
+}
+
+#ja-contentheading div.blog {
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC;
+}
+
+#ja-contentheading div.leading {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+tr.sectiontableentry0 td,
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+tr.sectiontableentry2 td {
+	background: #FFFFFF;
+}
+
+.article-meta,
+.createdby {
+	color: #B73636;
+}
+
+.createdate {
+	background: url(../../images/black/vline.gif) no-repeat right center;
+}
+
+h1.logo a {
+	background: url(../../images/black/logo.png) no-repeat center;
+}
+
+#ja-mainnav .inner {
+	background: url(../../images/black/mainnav-bg.gif) repeat-x left top #333333;
+	border-bottom: 1px solid #333333;
+}
+
+#ja-headtools {
+	background: url(../../images/black/ht-bg.gif) no-repeat left center;
+}
+
+#ja-headtools li a.login-switch {
+	background: url(../../images/black/login-bg.gif) no-repeat left center;
+}
+
+#ja-headtools li a.register-switch {
+	background: url(../../images/black/sign-bg.gif) no-repeat left center;
+}
+
+div.ja-headtool a.logout-switch {
+	background: url(../../images/black/logout-bg.gif) no-repeat left top;
+	color: #CCCCCC;
+}
+
+div.ja-headtool a.logout-switch:hover,
+div.ja-headtool a.logout-switch:focus,
+div.ja-headtool a.logout-switch:active {
+	color: #FFFFFF;
+}
+
+#ja-topsl .inner {
+	background: url(../../images/black/topsl-bg.gif) repeat-y left top;
+}
+
+#ja-hl div.moduletable .img-border {
+	border: 5px solid #990000;
+	margin-top: -1px;
+}
+
+#ja-hl div.moduletable h3 {
+	background: url(../../images/black/hl-h3-bg.gif) no-repeat right center;
+}
+
+#ja-hl div.moduletable h3 span.left-bg {
+	background: url(../../images/black/hl-span-r.gif) no-repeat left center;
+}
+
+#ja-hl div.moduletable h3 span.right-bg {
+	background: none;
+}
+
+#ja-hl div.moduletable div.ja-box-ct {
+	background: none;
+	border: none;
+}
+
+#ja-pathway .inner {
+	background: #222222;
+	border-top: 1px solid #111111;
+	border-bottom: 1px solid #111111;
+}
+
+#ja-pathway .ja-pathway-text {
+	background: none;
+}
+
+#ja-pathway strong {
+	color: #B73636;
+}
+
+#ja-search {
+	background: url(../../images/black/search-bg.gif) no-repeat left center;
+}
+
+#ja-search .button {
+	background: url(../../images/black/bsearch-bg.gif) no-repeat left center;
+}
+
+#ja-current-content {
+	background: url(../../images/black/cc-bg.gif) repeat-y 5px top;
+}
+
+#ja-container-f #ja-current-content {
+	background: url(../../images/black/cc-bg2.gif) repeat-y center top;
+}
+
+#ja-subnav a,
+ul.menu li a {
+	background: url(../../images/arrow-grey.gif) no-repeat left center;
+	color: #555555;
+}
+
+#ja-subnav a:hover,
+#ja-subnav a:active,
+#ja-subnav a:focus,
+ul.menu li a:hover,
+ul.menu li a:active,
+ul.menu li a:focus {
+	background: url(../../images/black/arrow-hover.gif) no-repeat left center;
+	color: #990000;
+}
+
+#ja-subnav li.active a,
+ul.menu li.active a {
+	color: #990000;
+}
+
+div.moduletable h3,
+div.moduletable_default h3,
+div.moduletable_menu h3,
+div.moduletable_text h3,
+div.moduletable_blank h3,
+div.moduletable_tabs h3 {
+	background: url(../../images/black/h3-bg.gif) no-repeat left bottom;
+	color: #FFFFFF;
+}
+
+div.moduletable h3 span.left-bg,
+div.moduletable_menu h3 span.left-bg,
+div.moduletable_default h3 span.left-bg,
+div.moduletable_text h3 span.left-bg,
+div.moduletable_tabs h3 span.left-bg {
+	background: url(../../images/black/span-left.gif) no-repeat right bottom;
+}
+
+div.moduletable h3 span.right-bg,
+div.moduletable_default h3 span.right-bg,
+div.moduletable_menu h3 span.right-bg,
+div.moduletable_text h3 span.right-bg,
+div.moduletable_tabs h3 span.right-bg {
+	background: none;
+}
+
+div.ja-box-ct,
+#ja-cs div.ja-box-ct {
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+}
+
+div.moduletable_blank div.ja-box-ct {
+	background: none;
+	border: none;
+}
+
+#ja-botsl div.moduletable div.ja-box-ct {
+	background: none;
+	border: none;
+}
+
+#ja-botsl div.moduletable h3 {
+	border-bottom: 1px solid #CC0000;
+}
+
+#ja-botsl a:hover,
+#ja-botsl a:focus,
+#ja-botsl a:active {
+	color: #FFFFFF;
+}
+
+#ja-botsl ul.menu li a:hover,
+#ja-botsl ul.menu li a:active,
+#ja-botsl ul.menu li a:focus {
+	background: url(../../images/black/arrow-white.gif) no-repeat left center;
+}
+
+#ja-botsl ul.menu li.active a {
+	background: url(../../images/black/arrow-white.gif) no-repeat left center;
+	color: #FFFFF;
+}
+
+#ja-footer a:hover, #ja-footer a:active, #ja-footer a:focus,
+#ja-footer li a:hover,
+#ja-footer li a:focus,
+#ja-footer li a:active {
+	color: #CC0000;
+}
+
+/*ja contentslider*/
+#ja-contentslider-center-wrap {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+div.ja_slideimages .caption {
+	border: 1px solid #CCCCCC;
+}
+
+/*ja tabs*/
+#ja-colwrap div.moduletable_tabs {
+	border: none !important;
+	background: none;
+}
+
+.nickel .ja-tabs-title-top {
+	background: url(../../images/black/title-top-bg.gif) repeat-x left bottom #444444;
+}
+
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.active,
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(../../images/black/active-top-r.gif) no-repeat right bottom;
+}
+
+.nickel .ja-tabs-title-top ul li.active h3,
+.nickel .ja-tabs-title-top ul li.firstactive h3,
+.nickel .ja-tabs-title-top ul li.lastactive h3 {
+	background: url(../../images/black/active-top-l.gif) no-repeat left bottom !important;
+}
+
+.ja-tabswrap {
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+}
+
+.nickel .ja-tab-panels-bottom {
+	border-top: 1px solid #CCCCCC;
+}
+
+.nickel .ja-tabs-title-bottom {
+	background: url(../../images/black/title-bot-bg.gif) repeat-x left top;
+}
+
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(../../images/black/active-bot-r.gif) no-repeat right top;
+}
+
+.nickel .ja-tabs-title-bottom ul li.active h3,
+.nickel .ja-tabs-title-bottom ul li.firstactive h3,
+.nickel .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: url(../../images/black/active-bot-l.gif) no-repeat left top;
+}
+
+/*ja news*/
+#ja-news div.moduletable div.ja-box-ct {
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+}
+
+div.jazin-section a span {
+	background: url(../../images/black/arrow-r.gif) no-repeat right center;
+}
+
+.jazin-box {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+ul.jazin-links li a:hover,
+ul.jazin-links li a:active,
+ul.jazin-links li a:focus {
+	background: url(../../images/black/bullet-hover.gif) no-repeat 1px 7px;
+	color: #CC0000;
+}
+
+/*typography*/
+pre, .code {
+	background: #FFFFFF;
+	border-left: 5px solid #990000;
+}
+
+ul.checklist li {
+	background: url(../../images/black/icon-checklist.gif) no-repeat 0 4px !important;
+}
+
+ul.arrow li {
+	background: url(../../images/black/icon-arrow.gif) no-repeat 3px 5px;
+}
+
+p.stickynote {
+	background: url(../../images/icon-sticky.png) no-repeat left top #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+.dropcap {
+	color: #990000;
+}
+
+.highlight {
+	color: #990000;
+	background: #FFFFFF;
+}
+
+p.download {
+	background: url(../../images/icon-download.png) no-repeat left top #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+.bignumber {
+	background: url(../../images/black/ol-bg.gif) no-repeat top left;
+}
+
+div.bubble1 div {
+	background: url(../../images/black/bub1-br.gif) no-repeat bottom right;
+}
+
+div.bubble1 div div {
+	background: url(../../images/black/bub1-bl.gif) no-repeat bottom left;
+}
+
+div.bubble1 div div div {
+	background: url(../../images/black/bub1-tr.gif) no-repeat top right;
+}
+
+div.bubble1 div div div div {
+	background: url(../../images/black/bub1-tl.gif) no-repeat top left;
+}
+
+div.bubble2 div {
+	background: url(../../images/black/bub2-br.gif) no-repeat bottom right;
+}
+
+div.bubble2 div div {
+	background: url(../../images/black/bub2-bl.gif) no-repeat bottom left;
+}
+
+div.bubble2 div div div {
+	background: url(../../images/black/bub2-tr.gif) no-repeat top right;
+}
+
+div.bubble2 div div div div {
+	background: url(../../images/black/bub2-tl.gif) no-repeat top left;
+}
+
+div.bubble3 div {
+	background: url(../../images/black/bub3-br.gif) no-repeat bottom right;
+}
+
+div.bubble3 div div {
+	background: url(../../images/black/bub3-bl.gif) no-repeat bottom left;
+}
+
+div.bubble3 div div div {
+	background: url(../../images/black/bub3-tr.gif) no-repeat top right;
+}
+
+div.bubble3 div div div div {
+	background: url(../../images/black/bub3-tl.gif) no-repeat top left;
+}
+
+div.bubble4 div {
+	background: url(../../images/black/bub4-br.gif) no-repeat bottom right;
+}
+
+div.bubble4 div div {
+	background: url(../../images/black/bub4-bl.gif) no-repeat bottom left;
+}
+
+div.bubble4 div div div {
+	background: url(../../images/black/bub4-tr.gif) no-repeat top right;
+}
+
+div.bubble4 div div div div {
+	background: url(../../images/black/bub4-tl.gif) no-repeat top left;
+}
+
+.legend-title {
+	background: #EEEEEE;
+	color: #990000;
+}
+
+.legend {
+	border: 1px solid #CCCCCC;
+}
+
+/*split menu*/
+#ja-splitmenu a {
+	background: url(../../images/black/mainnav-sep.gif) no-repeat right top;
+	color: #888888;
+}
+
+#ja-splitmenu a:hover,
+#ja-splitmenu a:active,
+#ja-splitmenu a:focus {
+	color: #CCCCCC;	
+}
+
+#ja-splitmenu li.active {
+	background: url(../../images/black/mainnav-active-r.gif) no-repeat right top;	
+}
+
+#ja-splitmenu li.active a {
+	background: url(../../images/black/mainnav-active-l.gif) no-repeat left top;
+}
+
+/*css menu*/
+#ja-cssmenu li a {
+	background: url(../../images/black/mainnav-sep.gif) no-repeat right top;
+	color: #888888;
+}
+
+#ja-cssmenu li a:hover,
+#ja-cssmenu li a:active,
+#ja-cssmenu li a:focus {
+	color: #CCCCCC;
+}
+
+#ja-cssmenu li.active {
+	background: url(../../images/black/mainnav-active-r.gif) no-repeat right top;	
+}
+
+#ja-cssmenu li.active a {
+	background: url(../../images/black/mainnav-active-l.gif) no-repeat left top;
+	color: #FFFFFF;
+}
+
+#ja-cssmenu li ul a {
+	color: #CCCCCC !important;
+}
+
+#ja-cssmenu li ul a:hover,
+#ja-cssmenu li ul a:active,
+#ja-cssmenu li ul a:focus,
+#ja-cssmenu ul li:hover,
+#ja-cssmenu ul li.sfhover,
+#ja-cssmenu ul li.havesubchildsfhover,
+#ja-cssmenu ul li.havesubchild-activesfhover,
+#ja-cssmenu ul ul li:hover,
+#ja-cssmenu ul ul li.sfhover,
+#ja-cssmenu ul ul li.havesubchildsfhover,
+#ja-cssmenu ul ul li.havesubchild-activesfhover {
+	background: #111111;
+	color: #FFFFFF !important;
+}
+

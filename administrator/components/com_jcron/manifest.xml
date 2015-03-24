@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.15" method="upgrade">
+	<name>JCron</name>
+	<version>1.4.1</version>
+	<creationDate>07 January 2010</creationDate>
+    <author>JoomlaPlug.com</author>
+    <authorEmail>admin@joomlaplug.com</authorEmail>
+    <authorUrl>http://www.joomlaplug.com</authorUrl>
+    <copyright>2006 JoomlaPlug.com</copyright>
+    <license>GNU General Public License</license>
+    <description>
+    <![CDATA[
+    <pre>
+    <img style='float:left' src='http://www.joomlaplug.com/images/jcron.jpg' border='0'>
+    JCron Scheduler is a Joomla component for Cron Jobs Management and Scheduling!
+    It&apos;s purpose is to simulate cron jobs through Joomla front end interface at
+    preset periods of time for users who either don&apos;t have access to the server
+    crontab or don&apos;t want to use it for any purpose!
+
+    By default, it also installs the JCron plugin and enables it, you need to do this in order to make the cronjobs run
+
+    <b>Instructions:</b>
+
+    1. enabled the JCron plugin if not enabled by default.
+    2. open the JCron component and look for the Parameters toolbar button for basic configurations.
+    3. create a cronjob and enable it.	
+    
+    For suggestions or support please use
+    our forums <a href='http://www.joomlaplug.com/Forum/'>http://www.joomlaplug.com/Forum</a> or email <b>admin@joomlaplug.com</b>
+    </pre>
+    ]]>
+    </description>
+
+	<installfile>install/install.php</installfile>
+	<uninstallfile>install/uninstall.php</uninstallfile>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">install/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	
+	<administration>
+
+		<menu view="jcron" img="components/com_jcron/images/logo.gif">JCron</menu>
+        <submenu>
+			<menu view="jcron">Manage Cron Jobs</menu>
+			<menu view="about">About</menu>
+        </submenu>
+		
+		<files folder="admin">
+			<filename>jcron.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>images</folder>
+			<folder>assets</folder>
+			<folder>install</folder>
+		</files>		
+	</administration>
+	
+	<plugins>
+		<plugin plugin="jcron" group="system">
+			<files folder="plg_jcron">
+				<folder>jcron</folder> 
+				<file>jcron.php</file> 
+				<file>jcron.xml</file> 
+			</files>
+		</plugin>
+	</plugins>
+
+</install>

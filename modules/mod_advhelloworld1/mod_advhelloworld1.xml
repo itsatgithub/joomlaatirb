@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>AdvHelloWorld1</name>
+	<author>Blobject</author>
+	<creationDate>09/12/2009</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights
+		reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@blobject.es</authorEmail>
+	<authorUrl>www.blobject.es</authorUrl>
+	<version>0.0.11</version>
+	<description>AdvHelloWorld1 DESC</description>
+	<files>
+		<filename module="mod_advhelloworld1">mod_advhelloworld1.php</filename>
+		<folder>tmpl</folder>
+	</files>
+</install>

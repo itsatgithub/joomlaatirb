@@ -1,0 +1,212 @@
+/* 
+	Blue Dream
+	Written by Teylor Feliz  http://www.admixweb.com
+*/ /*table { background:#D3E4E5;
+ border:1px solid gray;
+ border-collapse:collapse;
+ color:#fff;
+ font:normal 12px verdana, arial, helvetica, sans-serif;
+}*/
+caption {
+	border: 1px solid #5C443A;
+	color: gray;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 6px 4px 8px 6px !important;
+	margin-bottom: 6px !important;
+	text-align: center;
+	/*
+ text-align:center;
+ text-transform:uppercase;
+ */
+}
+
+/*td, th { color:#363636;
+ padding:.4em;
+}
+tr { border:1px dotted gray;
+}
+thead th, tfoot th { background:#5C443A;
+ color:#FFFFFF;
+ padding:3px 10px 3px 10px;
+ text-align:left;
+ text-transform:uppercase;
+}
+tbody td a { color:white;
+ text-decoration:none;
+}
+tbody td a:visited { color:gray;
+ text-decoration:line-through;
+}
+tbody td a:hover { text-decoration:underline;
+}
+tbody th a { color:white;
+ font-weight:normal;
+ text-decoration:none;
+}
+tbody th a:hover { color:white;
+}
+tbody td+td+td+td a { background-image:url('bullet_blue.png');
+ background-position:left center;
+ background-repeat:no-repeat;
+ color:#03476F;
+ padding-left:15px;
+}
+tbody td+td+td+td a:visited { background-image:url('bullet_white.png');
+ background-position:left center;
+ background-repeat:no-repeat;
+}
+tbody th, tbody td { text-align:left;
+ vertical-align:top;
+}
+tfoot td { background:#5C443A;
+ color:#FFFFFF;
+ padding-top:3px;
+}
+.odd { background:#fff;
+}
+tbody tr:hover { background:#99BCBF;
+ border:1px solid #03476F;
+ color:#000000;
+}*/ /* 
+	Grey Suits you Sir. Please host the images on your own server.
+	written by Stuart Colville http://www.muffinresearch.co.uk
+*/
+table,td {
+	border: 1px solid #CCC;
+	border-collapse: collapse;
+	font: small/ 1.5 "Tahoma", "Bitstream Vera Sans", Verdana, Helvetica,
+		sans-serif;
+}
+
+table {
+	border: none;
+	border: 1px solid #CCC;
+}
+
+thead th,tbody th {
+	/*background            : #FFF url(th_bck.gif) repeat-x;*/
+	background: #106493;
+	/*color                 : #666; */
+	color: grey;
+	padding: 5px 10px;
+	border-left: 1px solid #CCC;
+}
+
+.white {
+	color: white;
+}
+
+tbody th {
+	background: #fafafb;
+	border-top: 1px solid #CCC;
+	text-align: left;
+	font-weight: normal;
+}
+
+tbody tr td {
+	padding: 5px 10px;
+	color: #666;
+}
+
+tbody tr:hover {
+	background: #FFF url(tr_bck.gif) repeat;
+}
+
+tbody tr:hover td {
+	color: #454545;
+}
+
+tfoot td,tfoot th {
+	border-left: none;
+	border-top: 1px solid #CCC;
+	padding: 4px;
+	background: #FFF url(foot_bck.gif) repeat;
+	color: #666;
+}
+
+/*caption
+{
+	text-align            : left;
+	font-size             : 120%;
+	padding               : 10px 0;
+	color                 : #666;
+}*/
+table a:link {
+	color: #FFFFFF;
+}
+
+table a:visited {
+	color: #FFFFCC;
+}
+
+table a:hover {
+	color: #003366;
+	text-decoration: none;
+}
+
+table a:active {
+	color: #003366;
+}
+
+tbody th .thin {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+tbody tr td .thin {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+tbody tr .thin {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+/* fancyform styles */
+.demo label {
+	display: block;
+	padding: 0.5em;
+	padding-left: 32px;
+	background-position: 8px center;
+	background-repeat: no-repeat;
+	border: 1px solid #252525;
+	clear: both;
+	cursor: pointer
+}
+
+.fancy .checked {
+	background-color: #222;
+	background-image: url(chk_on.png)
+}
+
+.fancy .unchecked {
+	background-color: #1c1c1c;
+	background-image: url(components/com_science/assets/chk_off.png)
+}
+
+.selected {
+	background-color: #222;
+	background-image: url(rdo_on.png)
+}
+
+.unselected {
+	background-color: #1c1c1c;
+	background-image: url(rdo_off.png)
+}
+
+.leftcol {
+	float: left;
+	clear: left;
+	width: 50%
+}
+
+.rightcol {
+	float: left;
+	clear: right;
+	width: 50%
+}
