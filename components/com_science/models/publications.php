@@ -260,9 +260,6 @@ class ScienceModelPublications extends JModel
 		. $orderby
 		;
 		
-		echo $query;
-		break;
-
 		// load the content
 		$this->_data = $this->_getList($query);
 		
