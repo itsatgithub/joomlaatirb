@@ -449,6 +449,7 @@ class ScienceViewReport extends JView
 							$worksheet->write($i+1, $j++, $item->ro_description);
 							$worksheet->write($i+1, $j++, $item->consortium);
 							$worksheet->write($i+1, $j++, $item->coordinator);
+							$worksheet->write($i+1, $j++, $item->pu_description);
 							$worksheet->write($i+1, $j++, $item->comments);
 						}
 					}
