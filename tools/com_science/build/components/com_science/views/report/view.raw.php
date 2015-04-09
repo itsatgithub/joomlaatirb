@@ -342,6 +342,7 @@ class ScienceViewReport extends JView
 						$worksheet->write(0, $j++, JText::_( 'PROJECT_ROLE' ));
 						$worksheet->write(0, $j++, JText::_( 'PROJECT_CONSORTIUM' ));
 						$worksheet->write(0, $j++, JText::_( 'PROJECT_COORDINATOR' ));
+						$worksheet->write(0, $j++, JText::_( 'PROJECT_UNEIX' ));
 						$worksheet->write(0, $j++, JText::_( 'PROJECT_COMMENTS' ));
 						
 						$items =& $items['projects'];
@@ -448,6 +449,7 @@ class ScienceViewReport extends JView
 							$worksheet->write($i+1, $j++, $item->ro_description);
 							$worksheet->write($i+1, $j++, $item->consortium);
 							$worksheet->write($i+1, $j++, $item->coordinator);
+							$worksheet->write($i+1, $j++, $item->pu_description);
 							$worksheet->write($i+1, $j++, $item->comments);
 						}
 					}

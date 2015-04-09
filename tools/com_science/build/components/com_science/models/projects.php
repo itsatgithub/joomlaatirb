@@ -250,6 +250,7 @@ class ScienceModelProjects extends JModel
 		. ', ow.description AS ow_description, ro.description AS ro_description'
 		. ', fe.description AS fe_description'
 		. ', pi.name AS principal_investigator'
+		. ', pu.description AS pu_description'
 		. ' FROM `#__sci_projects` AS p'
 		. ' LEFT JOIN `#__sci_group_leaders` AS gl ON gl.id = p.group_leader_id'
 		. ' LEFT JOIN `#__sci_project_action_types` AS at ON at.id = p.action_type_id'
@@ -258,6 +259,7 @@ class ScienceModelProjects extends JModel
 		. ' LEFT JOIN `#__sci_project_grant_types` AS gt ON gt.id = p.grant_type_id'
 		. ' LEFT JOIN `#__sci_project_funding_entities` AS fe ON fe.id = p.funding_entity_id'
 		. ' LEFT JOIN `#__sci_principal_investigators` AS pi ON pi.id = p.principal_investigator_id'
+		. ' LEFT JOIN `#__sci_project_uneix` AS pu ON pu.id = p.uneix_id'
 		. $where
 		. $orderby
 		;
