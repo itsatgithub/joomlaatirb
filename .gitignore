@@ -1,3 +1,8 @@
-.*
+/.*
+/.gitignore
+/.htaccess
+/administrator/cache/*
+/cache/*
+/installation/*
 /logs/*
-configuration.php
+/configuration.php
