@@ -54,8 +54,6 @@ class IrbtoolsControllerRoaming extends JController
 		// check that the start date and end date are not in the past
 		$today = date('Y-m-d');
 		if (strtotime($post['from']) < strtotime($today)) {
-			echo "control 1";
-			break 2;
 			$mainframe->enqueueMessage( JText::_('ROAMING_DATE_OUT') );
 			JRequest::setVar('view', 'roaming' );
 			parent::display();
@@ -64,9 +62,6 @@ class IrbtoolsControllerRoaming extends JController
 		
 		// check that start date <= end date
 		if ((strtotime($post['to']) != '') && (strtotime($post['from']) > strtotime($post['to']))) {
-			echo "control 3";
-			var_dump($post);
-			break 2;
 			$mainframe->enqueueMessage( JText::_('ROAMING_DATE_OUT') );
 			JRequest::setVar('view', 'roaming' );
 			parent::display();
