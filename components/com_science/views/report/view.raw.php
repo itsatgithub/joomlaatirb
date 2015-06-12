@@ -471,6 +471,7 @@ class ScienceViewReport extends JView
 						$worksheet->write(0, $j++, JText::_( 'RESEARCHCONTRACT_PRINCIPAL_INVESTIGATOR' ));
 						$worksheet->write(0, $j++, JText::_( 'RESEARCHCONTRACT_START_DATE' ));
 						$worksheet->write(0, $j++, JText::_( 'RESEARCHCONTRACT_END_DATE' ));
+						$worksheet->write(0, $j++, JText::_( 'RESEARCHCONTRACT_FUNDING_SECTOR' ));
 						$worksheet->write(0, $j++, JText::_( 'RESEARCHCONTRACT_BUDGET' ));
 						$worksheet->write(0, $j++, JText::_( 'RESEARCHCONTRACT_OVERHEAD' ));
 
@@ -489,6 +490,7 @@ class ScienceViewReport extends JView
 							$worksheet->write($i+1, $j++, utf8_decode( $item->principal_investigator ));
 							$worksheet->write($i+1, $j++, $item->start_date);
 							$worksheet->write($i+1, $j++, $item->end_date);
+							$worksheet->write($i+1, $j++, $item->funding_sector);
 							$worksheet->write($i+1, $j++, $item->budget );
 							$worksheet->write($i+1, $j++, $item->overhead );
 						}
