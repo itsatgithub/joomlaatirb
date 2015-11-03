@@ -6,3 +6,9 @@
 /installation/*
 /logs/*
 /configuration.php
+/tools/com_science/build/*
+/tools/com_science/zips/*
+/tools/com_irbtools/build/*
+/tools/com_irbtools/zips/*
+/tools/com_irbgoogle/build/*
+/tools/com_irbgoogle/zips/*
