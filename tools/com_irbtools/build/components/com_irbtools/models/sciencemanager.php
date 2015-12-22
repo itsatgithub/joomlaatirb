@@ -30,9 +30,9 @@ class IrbtoolsModelSciencemanager extends JModel
 		
 		// Roberto 2012-03-15 datos operacionales
 		$option['driver']   = 'mysql';            // Database driver name
-		$option['host']     = 'irbsvr3.irb.pcb.ub.es';    // Database host name
-		$option['user']     = 'intranetuser';       // User for database authentication
-		$option['password'] = '72T4manV';   // Password for database authentication
+		$option['host']     = 'irbsvr83.irb.pcb.ub.es';    // Database host name
+		$option['user']     = 'joomlauser';       // User for database authentication
+		$option['password'] = 'joomlauser';   // Password for database authentication
 		$option['database'] = 'sciprod';      // Database name
 		$option['prefix']   = '';             // Database prefix (may be empty)
 		
