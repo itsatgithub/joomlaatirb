@@ -69,6 +69,11 @@ class IrbtoolsControllerRoaming extends JController
 		}
 		
 		// store data. the function returns the saved id
+		
+		// Roberto 2015-12-23 store the telephone's owner email on the list, to be informed later
+		$model = $this->getModel('roaming');
+		$owner_email = $model->getOwnerEmail($post['long_number']);		
+		
 		$session = JFactory::getSession();
 		$roaming_array = $session->get('roamings', array());
 		$roaming_array[] = array(
@@ -76,7 +81,8 @@ class IrbtoolsControllerRoaming extends JController
 				'long_number' => $post['long_number'],
 				'from' => $post['from'],
 				'to' => $post['to'],
-				'username' => $post['username']
+				'username' => $post['username'],
+				'email' => $owner_email // this is the owner's email
 		);
 		$session->set('roamings', $roaming_array);
 		
@@ -159,6 +165,9 @@ class IrbtoolsControllerRoaming extends JController
 			$lines_email_now = '';
 			$lines_email_delay = '';
 			$lines_email_movistar = '';
+			// Roberto 2015-12-23 new emails to be used
+			$cc_email_now = '';
+			$cc_email_delay = '';
 				
 			foreach ($req['requests'] as $order)
 			{		
@@ -173,8 +182,17 @@ class IrbtoolsControllerRoaming extends JController
 							'long_number' => $order['long_number'],
 							'from' => $order['from'],
 							'to' => $order['to'],
-							'username' => $user->username
+							'username' => $user->username,
+							'email' => $order['email'] // Roberto 2015-12-23
 					);
+					
+					// Roberto 2015-12-23
+					if (!strcmp($order['email'], $user->email)) {
+						$cc_email_delay .= $order['email'] . ",";
+					}
+					if (!empty($cc_email_delay)) {
+						rtrim($cc_email_delay, ",");
+					}
 											
 					// this is the line to be sent by email
 					$lines_email_delay .= $order['description']." - "
@@ -198,8 +216,17 @@ class IrbtoolsControllerRoaming extends JController
 							'long_number' => $order['long_number'],
 							'from' => $order['from'],
 							'to' => $order['to'],
-							'username' => $user->username
+							'username' => $user->username,
+							'email' => $order['email'] // Roberto 2015-12-23
 					);
+					
+					// Roberto 2015-12-23
+					if (!strcmp($order['email'], $user->email)) {
+						$cc_email_now .= $order['email'] . ",";
+					}
+					if (!empty($cc_email_now)) {
+						rtrim($cc_email_now, ",");
+					}
 					
 					// this is the line to be sent by email						
 					$lines_email_now .= $order['description']." - "
@@ -233,6 +260,11 @@ class IrbtoolsControllerRoaming extends JController
 				$emailRecipientCcCsv = $params->get( 'irbtoolsConfig_RoamingEmailCc', '' );
 				$cc = explode(",", $emailRecipientCcCsv);
 				$mailer->addCC($cc);
+				// Roberto 2015-12-23 Added owner's email as CC
+				if (!empty($cc_email_now)) {
+					$cc = explode(",", $cc_email_now);
+					$mailer->addCC($cc);
+				}
 				
 				$emailUserSubject = $params->get( 'irbtoolsConfig_RoamingUserEmailSubject', '' );
 				$emailUserBody = $params->get( 'irbtoolsConfig_RoamingUserEmailBody', '' );
@@ -266,6 +298,11 @@ class IrbtoolsControllerRoaming extends JController
 				$emailRecipientCcCsv = $params->get( 'irbtoolsConfig_RoamingEmailCc', '' );
 				$cc = explode(",", $emailRecipientCcCsv);
 				$mailer->addCC($cc);
+				// Roberto 2015-12-23 Added owner's email as CC
+				if (!empty($cc_email_delay)) {
+					$cc = explode(",", $cc_email_delay);
+					$mailer->addCC($cc);
+				}
 				
 				$emailUserSubject = $params->get( 'irbtoolsConfig_DelayedRoamingUserEmailSubject', '' );
 				$mailer->setSubject($emailUserSubject);						

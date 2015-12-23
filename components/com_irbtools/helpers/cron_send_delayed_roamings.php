@@ -20,7 +20,7 @@ $sender = array(
 $params =& $mainframe->getParams( 'com_irbtools' );
 
 $db =& JFactory::getDBO();
-$query = 'SELECT `id`, `description`, `long_number`, `from`, `to`, `username`'
+$query = 'SELECT `id`, `description`, `long_number`, `from`, `to`, `username`, `email`'
 . ' FROM `#__irbtools_roamings`'
 . ' WHERE `code` = \'\''
 ;
@@ -48,6 +48,7 @@ foreach ($roaming_requests as $req)
 	$array_aux['from'] = $req->from;
 	$array_aux['to'] = $req->to;
 	$array_aux['username'] = $req->username;
+	$array_aux['email'] = $req->email;
 	$requests_by_owner[$owner]['requests'][] = $array_aux;
 }
 
@@ -63,7 +64,9 @@ foreach ($requests_by_owner as $key => &$req)
 	$user_names = '';
 	$lines_email_delay = '';
 	$lines_email_movistar = '';
-
+	// Roberto 2015-12-23 new emails to be used
+	$cc_email_now = '';
+	
 	foreach ($req['requests'] as $order)
 	{
 		// verifying dates
@@ -110,19 +113,11 @@ foreach ($requests_by_owner as $key => &$req)
 					'long_number' => $order['long_number'],
 					'from' => $order['from'],
 					'to' => $order['to'],
-					'username' => $order['username']
+					'username' => $order['username'],
+					'email' => $order['email']
 			);
 				
-			// this is the line to be sent by email to the users
-			$lines_email_now .= $order['description']." - "
-			.$order['long_number']
-			." ("
-			.date("d/m/Y", strtotime($order['from']))
-			." - "
-			.(strcmp($order['to'], '') == 0? 'no end date': date("d/m/Y", strtotime($order['to'])))
-			.")\n";
-			
-			// this is the name and email addres of the user (the email can have many)
+			// this is the name and email addreses of the user (the email can have many)
 			$query = 'SELECT u.*'
 			. ' FROM `#__users` AS u'
 			. ' WHERE u.username = \'' . $order['username'] . '\''
@@ -133,6 +128,21 @@ foreach ($requests_by_owner as $key => &$req)
 				$user_names .= $user->name . ', ';
 				$user_emails[] = $user->email;
 			}
+			
+			// Roberto 2015-12-23
+			if (!strcmp($order['email'], $user->email)) {
+				$cc_email_now .= $order['email'] . ",";
+			}
+			
+			// this is the line to be sent by email to the users
+			$lines_email_now .= $order['description']." - "
+			.$order['long_number']
+			." ("
+			.date("d/m/Y", strtotime($order['from']))
+			." - "
+			.(strcmp($order['to'], '') == 0? 'no end date': date("d/m/Y", strtotime($order['to'])))
+			.")\n";
+			
 
 			// this is the line to be sent to Movistar
 			$lines_email_movistar .= $order['description']." - "
@@ -148,6 +158,9 @@ foreach ($requests_by_owner as $key => &$req)
 	
 	// take out commas from the end of the string
 	$user_names = substr($user_names, 0, -2);
+	if (!empty($cc_email_now)) {
+		rtrim($cc_email_now, ",");
+	}
 	
 	// send email to user with requests ok
 	if (!empty($lines_email_now)) {
@@ -160,6 +173,12 @@ foreach ($requests_by_owner as $key => &$req)
 		$emailRecipientCcCsv = $params->get( 'irbtoolsConfig_RoamingEmailCc', '' );
 		$cc = explode(",", $emailRecipientCcCsv);
 		$mailer->addCC($cc);
+
+		// Roberto 2015-12-23
+		if (!empty($cc_email_now)) {
+			$cc = explode(",", $cc_email_now);
+			$mailer->addCC($cc);
+		}
 		
 		$emailUserSubject = $params->get( 'irbtoolsConfig_RoamingUserEmailSubject', '' );
 		$emailUserBody = $params->get( 'irbtoolsConfig_RoamingUserEmailBody', '' );
