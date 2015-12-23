@@ -155,6 +155,12 @@ foreach ($requests_by_owner as $key => &$req)
 		$mailer =& JFactory::getMailer();
 		$mailer->setSender($sender);				
 		$mailer->addRecipient($user_emails);						
+
+		// Roberto 2015-12-23 Added ITS as CC on the email (from the parameters...)
+		$emailRecipientCcCsv = $params->get( 'irbtoolsConfig_RoamingEmailCc', '' );
+		$cc = explode(",", $emailRecipientCcCsv);
+		$mailer->addCC($cc);
+		
 		$emailUserSubject = $params->get( 'irbtoolsConfig_RoamingUserEmailSubject', '' );
 		$emailUserBody = $params->get( 'irbtoolsConfig_RoamingUserEmailBody', '' );
 		// replace the email subject

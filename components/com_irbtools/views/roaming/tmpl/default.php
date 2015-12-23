@@ -8,8 +8,6 @@
 	function myValidate(f) {
 		if (document.formvalidator.isValid(f)) {
 				f.check.value='<?php echo JUtility::getToken(); ?>'; //send token
-				var msg = 'In case you need it, do not forget to add data or voice roaming to your present request.';
-				alert(msg);
 				return true; 
 			}
 			else {

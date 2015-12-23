@@ -229,13 +229,19 @@ class IrbtoolsControllerRoaming extends JController
 				$mailer->setSender($sender);
 				$mailer->addRecipient($user->email);
 
+				// Roberto 2015-12-23 Added ITS as CC on the email (from the parameters...)
+				$emailRecipientCcCsv = $params->get( 'irbtoolsConfig_RoamingEmailCc', '' );
+				$cc = explode(",", $emailRecipientCcCsv);
+				$mailer->addCC($cc);
+				
 				$emailUserSubject = $params->get( 'irbtoolsConfig_RoamingUserEmailSubject', '' );
 				$emailUserBody = $params->get( 'irbtoolsConfig_RoamingUserEmailBody', '' );
 				// replace the email subject
 				$p1 = array('#request_number');
 				$p2 = array($req['request_number']);
 				$subject = str_replace($p1, $p2, $emailUserSubject);
-				$mailer->setSubject($subject);						
+				$mailer->setSubject($subject);				
+				
 				// replace the email body
 				$p1 = array("#request_number", "#requester", "#name", "#lines");
 				$p2 = array($req['request_number'], $user->name, $key, $lines_email_now);
@@ -256,9 +262,15 @@ class IrbtoolsControllerRoaming extends JController
 				$mailer->setSender($sender);
 				$mailer->addRecipient($user->email);
 
+				// Roberto 2015-12-23 Added ITS as CC on the email (from the parameters...)
+				$emailRecipientCcCsv = $params->get( 'irbtoolsConfig_RoamingEmailCc', '' );
+				$cc = explode(",", $emailRecipientCcCsv);
+				$mailer->addCC($cc);
+				
 				$emailUserSubject = $params->get( 'irbtoolsConfig_DelayedRoamingUserEmailSubject', '' );
 				$mailer->setSubject($emailUserSubject);						
-				$emailUserBody = $params->get( 'irbtoolsConfig_DelayedRoamingUserEmailBody', '' );
+				$emailUserBody = $params->get( 'irbtoolsConfig_DelayedRoamingUserEmailBody', '' );				
+				
 				// replace the email body
 				$p1 = array("#requester", "#name", "#lines");
 				$p2 = array($user->name, $key, $lines_email_delay);
