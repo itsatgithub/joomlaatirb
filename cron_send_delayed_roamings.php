@@ -69,9 +69,6 @@ foreach ($requests_by_owner as $key => &$req)
 	
 	foreach ($req['requests'] as $order)
 	{
-		var_dump($order);
-		break;
-		
 		// verifying dates
 		$today = date('Y-m-d');
 		$limit = date('Y-m-d', strtotime($today . "+ " . $params->get( 'irbtoolsConfig_NumberOfDays', '' ) . " days")); // 4 days from now

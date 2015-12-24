@@ -78,8 +78,9 @@ class IrbtoolsModelRoaming extends JModel
 	 */
 	function store($data)
 	{
+		
 		$row =& $this->getTable('roaming');
-
+		
 		// Bind the form fields to the web link table
 		if (!$row->bind($data)) {
 			$this->setError($this->_db->getErrorMsg());
@@ -185,6 +186,7 @@ class IrbtoolsModelRoaming extends JModel
 			$item->from = null;
 			$item->to = null;
 			$item->username = null;
+			$item->email = null;
 			$this->_data = $item;
 
 			return (boolean) $this->_data;
