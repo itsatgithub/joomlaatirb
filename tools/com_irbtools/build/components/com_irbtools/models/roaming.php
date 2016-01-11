@@ -78,8 +78,9 @@ class IrbtoolsModelRoaming extends JModel
 	 */
 	function store($data)
 	{
+		
 		$row =& $this->getTable('roaming');
-
+		
 		// Bind the form fields to the web link table
 		if (!$row->bind($data)) {
 			$this->setError($this->_db->getErrorMsg());
@@ -185,6 +186,7 @@ class IrbtoolsModelRoaming extends JModel
 			$item->from = null;
 			$item->to = null;
 			$item->username = null;
+			$item->email = null;
 			$this->_data = $item;
 
 			return (boolean) $this->_data;
@@ -203,6 +205,19 @@ class IrbtoolsModelRoaming extends JModel
 		$this->_db->setQuery($query);		
 		$result = $this->_db->loadObject();
 		return $result->owner;
+	}
+	
+	// Roberto 2015-12-23 Get the number's owner email
+	function getOwnerEmail($long_number)
+	{
+		$query = 'SELECT u.*'
+		. ' FROM `#__irbtools_roaming_users` AS u'
+		. ' LEFT JOIN `#__irbtools_roaming_telephones` AS t ON t.owner_id = u.id'
+		. ' WHERE t.long_number = \'' . $long_number. '\''		
+		;
+		$this->_db->setQuery($query);		
+		$result = $this->_db->loadObject();
+		return $result->email;
 	}
 	
 }
