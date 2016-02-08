@@ -2,9 +2,9 @@
 #+########################################################################
 #
 #
-# File: ldapsearch_uid.pl
+# File: change_email_date.pl
 #
-# Date: 22-Apr-09
+# Date: 20-Jan-13
 #
 # Author: Francisco Jose Lozano Alemany (ITS IRB).
 #
@@ -12,13 +12,13 @@
 # Description: Performs a search in the irbbarcelona ldap server. Optioanlly,
 #              it can replace attributes of those matching entries.
 #
+# Modified: 29-Jan-16 Raul Alvarez Tenor (ITS IRB) to correct Getopt module inclusion
 
 use Data::Types qw(:all);
 use Net::LDAP;
 use Net::LDAP::Search;
 use Net::LDAP::Message;
-require "getopts.pl";   # Subroutines: Getopts.
-
+use Getopt::Std;
 
 
 #define variables
@@ -31,7 +31,7 @@ require "getopts.pl";   # Subroutines: Getopts.
 
   ($program_name) = ($0 =~ /([^\/]+)$/);   # Strip off the path to the command.
    print "Program name: $program_name\n" if $DEBUG;
-   &Usage if !(&Getopts ('varh'));
+   &Usage if !(getopts ('varh'));
    &Usage if defined($opt_h);
    if (!defined $ARGV[1]) {
       &Usage();
@@ -86,8 +86,6 @@ $mesg->code && die $mesg->error;
           if ($replace) {
              print "New IRB-FechaBajaMail: $new_date \n" if $verbose; 
              $entry->replace ( 'IRB-FechaBajaMail' => $new_date ); 
-# 2013-4-05 Roberto. Actualiza también el valor de IRB-EMail para evitar el bug de borrado cuando se modifica una fecha.             
-             $entry->replace ( 'IRB-EMail' => 'TRUE' ); 
           }
 
 
