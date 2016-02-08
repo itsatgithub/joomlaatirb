@@ -2,11 +2,11 @@
 <install type="component" version="1.5.0" method="upgrade">
     <name>IRBtools</name>
     <author>IRB Barcelona</author>
-    <creationDate>2016-01-11</creationDate>
+    <creationDate>2016-02-08</creationDate>
     <license>GNU/GPL</license>
-    <version>1.63</version>
+    <version>1.64</version>
     <description>
-    	IRB Barcelona Tools. Ticket Peticiones Roaming de David en Redbooth, y comentarios de Curro
+    	IRB Barcelona Tools. Añado comentarios nuevos de Curro al texto.
     </description>
 
     <!-- installation part -->
