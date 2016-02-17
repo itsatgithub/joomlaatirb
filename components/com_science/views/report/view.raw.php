@@ -119,6 +119,7 @@ class ScienceViewReport extends JView
 						$worksheet->write(0, $j++, JText::_( 'ID' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_RESEARCH_PROGRAMME' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_GROUP_LEADER' ));
+						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_PUBMEDID' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_TYPE' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_TITLE' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_AUTHORS' ));
@@ -157,6 +158,7 @@ class ScienceViewReport extends JView
 							$worksheet->write( $i+1, $j++, $item->id );
 							$worksheet->write( $i+1, $j++, $item->gl_research_programme );
 							$worksheet->write( $i+1, $j++, $item->gl_name );
+							$worksheet->write( $i+1, $j++, $item->pubmed_id );
 							$worksheet->write( $i+1, $j++, $item->pt_description );
 							$worksheet->write( $i+1, $j++, $item->title );
 							$worksheet->write( $i+1, $j++, $item->authors );

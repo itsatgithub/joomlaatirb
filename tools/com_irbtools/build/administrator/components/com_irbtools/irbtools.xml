@@ -4,9 +4,9 @@
     <author>IRB Barcelona</author>
     <creationDate>2016-02-08</creationDate>
     <license>GNU/GPL</license>
-    <version>1.64</version>
+    <version>1.65</version>
     <description>
-    	IRB Barcelona Tools. Añado comentarios nuevos de Curro al texto.
+    	IRB Barcelona Tools. Nueva versión del script change_email_date.pl.
     </description>
 
     <!-- installation part -->
