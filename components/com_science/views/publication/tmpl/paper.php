@@ -170,6 +170,7 @@
 		<td><?php echo ($this->rights == 'write') ? $this->lists['selected_extranet'] : $this->publication->selected_extranet; ?>
 		</td>
 	</tr>
+	<?php if (($this->isadministrator)): ?>
 	<tr class="sectiontableentry1">
 		<th><?php echo JText::_('PUBLICATION_PHD_SELECTED_PUBLICATION'); ?>:
 		</th>
@@ -182,6 +183,7 @@
 		<td><?php echo ($this->rights == 'write') ? $this->lists['irb_selected_publication'] : $this->publication->irb_selected_publication; ?>
 		</td>
 	</tr>
+	<?php endif; ?>
 	
 
 	<?php if (($this->rights == 'write')): ?>
