@@ -2,11 +2,11 @@
 <install type="component" version="1.5.0" method="upgrade">
     <name>IRBtools</name>
     <author>IRB Barcelona</author>
-    <creationDate>2016-02-08</creationDate>
+    <creationDate>2016-02-19</creationDate>
     <license>GNU/GPL</license>
-    <version>1.65</version>
+    <version>1.66</version>
     <description>
-    	IRB Barcelona Tools. Nueva versión del script change_email_date.pl.
+    	IRB Barcelona Tools. Nuevo texto corregido para la petición de Roaming.
     </description>
 
     <!-- installation part -->
