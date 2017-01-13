@@ -243,7 +243,7 @@ class ScienceModelPublications extends JModel
 		$query = 'SELECT p.*, gl.name AS gl_name'
 		. ', gl.research_programme AS gl_research_programme, gl.report_order AS gl_report_order'
 		. ', gc.description AS gc_description, pt.description AS pt_description, jif.impact_factor AS impact_factor'
-		. ', jif.quartile AS quartile'
+		. ', jif.quartile AS quartile, gl.selected_extranet AS gl_selected_extranet'
 		. ' FROM `#__sci_publications` AS p'
 		. ' LEFT JOIN `#__sci_publication_group_leader` AS pgl ON pgl.publication_id = p.id'
 		. ' LEFT JOIN `#__sci_group_leaders` AS gl ON gl.id = pgl.group_leader_id'

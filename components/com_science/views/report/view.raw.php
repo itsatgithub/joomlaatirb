@@ -147,7 +147,7 @@ class ScienceViewReport extends JView
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_CITATIONS' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_PHD_SELECTED_PUBLICATION' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_IRB_SELECTED_PUBLICATION' ));
-							
+						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_TO_WEB' ));							
 						$items =& $items['publications'];
 
 						for ($i=0, $n=count( $items ); $i < $n; $i++)
@@ -186,7 +186,7 @@ class ScienceViewReport extends JView
 							$worksheet->write( $i+1, $j++, $item->citations );
 							$worksheet->write( $i+1, $j++, ($item->phd_selected_publication) ? JText::_( 'YES' ) : JText::_( 'NO' ));
 							$worksheet->write( $i+1, $j++, ($item->irb_selected_publication) ? JText::_( 'YES' ) : JText::_( 'NO' ));
-						}
+							$worksheet->write( $i+1, $j++, $item->gl_selected_extranet );						}
 					}
 					break;
 						
