@@ -2,10 +2,10 @@
 <install type="component" version="1.5" method="upgrade">
 	<name>Science</name>
 	<author>GPL@vui</author>
-	<creationDate>2016-02-17</creationDate>
+	<creationDate>2017-01-13</creationDate>
 	<license>GNU/GPL</license>
-	<version>1.83</version>
-	<description>Incluido Pubmed Id en el report excel</description>
+	<version>1.84</version>
+	<description>Incluido Selected Extranet en el report de publicaciones</description>
 
 	<!-- installation part -->
 	<installfile>install.science.php</installfile>

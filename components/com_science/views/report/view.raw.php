@@ -186,7 +186,8 @@ class ScienceViewReport extends JView
 							$worksheet->write( $i+1, $j++, $item->citations );
 							$worksheet->write( $i+1, $j++, ($item->phd_selected_publication) ? JText::_( 'YES' ) : JText::_( 'NO' ));
 							$worksheet->write( $i+1, $j++, ($item->irb_selected_publication) ? JText::_( 'YES' ) : JText::_( 'NO' ));
-							$worksheet->write( $i+1, $j++, $item->gl_selected_extranet );						}
+							$worksheet->write( $i+1, $j++, ($item->pgl_selected_extranet) ? JText::_( 'YES' ) : JText::_( 'NO' ));
+						}	
 					}
 					break;
 						
