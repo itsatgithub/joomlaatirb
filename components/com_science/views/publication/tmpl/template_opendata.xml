@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="sort-mets_mets" OBJID="sword-mets" LABEL="DSpace SWORD Item" PROFILE="DSpace METS SIP Profile 1.0" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd">
+   <metsHdr CREATEDATE="2016-06-06T00:00:00">
+      <agent ROLE="CUSTODIAN" TYPE="ORGANIZATION">
+         <name>GREC</name>
+      </agent>
+   </metsHdr>
+   <dmdSec ID="sword-mets-dmd-1" GROUPID="sword-mets-dmd-1_group-1">
+      <mdWrap LABEL="SWAP Metadata" MDTYPE="OTHER" OTHERMDTYPE="EPDCX" MIMETYPE="text/xml">
+         <xmlData>
+            <epdcx:descriptionSet xmlns:epdcx="http://purl.org/eprint/epdcx/2006-11-16/" xsi:schemaLocation="http://purl.org/eprint/epdcx/2006-11-16/ http://purl.org/eprint/epdcx/xsd/2006-11-16/epdcx.xsd">
+               <epdcx:description epdcx:resourceId="sword-mets-epdcx-1">
+                  <epdcx:statement epdcx:propertyURI="http://purl.org/dc/elements/1.1/title">
+                     <epdcx:valueString>#title#</epdcx:valueString>
+                  </epdcx:statement>
+               #creator_block#
+                  <epdcx:statement epdcx:propertyURI="http://purl.org/dc/terms/avalible">
+                     <epdcx:valueString>#available#</epdcx:valueString>
+                  </epdcx:statement>
+                  <epdcx:statement epdcx:propertyURI="isformatof">
+                     <epdcx:valueString>Reproducció del document publicat a: http://dx.doi.org/#isformatof#</epdcx:valueString>
+                  </epdcx:statement>
+                  <epdcx:statement epdcx:propertyURI="doi">
+                     <epdcx:valueString>http://dx.doi.org/#doi#</epdcx:valueString>
+                  </epdcx:statement>
+                  <epdcx:statement epdcx:propertyURI="http://purl.org/dc/terms/isPartOf">
+                     <epdcx:valueString>#isPartOf#</epdcx:valueString>
+                  </epdcx:statement>
+                  <epdcx:statement epdcx:propertyURI="http://purl.org/dc/elements/1.1/language">
+                     <epdcx:valueString>eng</epdcx:valueString>
+                  </epdcx:statement>
+                  <epdcx:statement epdcx:propertyURI="http://purl.org/dc/elements/1.1/format">
+                     <epdcx:valueString>application/pdf</epdcx:valueString>
+                  </epdcx:statement>
+                  <epdcx:statement epdcx:propertyURI="http://purl.org/dc/elements/1.1/type">
+                     <epdcx:valueString>info:eu-repo/semantics/article</epdcx:valueString>
+                  </epdcx:statement>
+                  <epdcx:statement epdcx:propertyURI="http://purl.org/dc/elements/1.1/type">
+                     <epdcx:valueString>info:eu-repo/semantics/publishedVersion</epdcx:valueString>
+                  </epdcx:statement>
+                  <epdcx:statement epdcx:propertyURI="accessrights">
+                     <epdcx:valueString>info:eu-repo/semantics/openAccess</epdcx:valueString>
+                  </epdcx:statement>
+               </epdcx:description>
+            </epdcx:descriptionSet>
+         </xmlData>
+      </mdWrap>
+   </dmdSec>
+   <fileSec>
+      <fileGrp ID="sword-mets-fgrp-1" USE="CONTENT">
+         <file GROUPID="sword-mets-fgid-0" ID="sword-mets-file-1" MIMETYPE="application/pdf">
+            <FLocat LOCTYPE="URL" xlink:href="NOMFITXER.pdf" />
+         </file>
+      </fileGrp>
+   </fileSec>
+   <structMap ID="sword-mets-struct-1" LABEL="structure" TYPE="LOGICAL">
+      <div ID="sword-mets-div-1" DMDID="sword-mets-dmd-1" TYPE="SWORD Object">
+         <div ID="sword-mets-div-2" TYPE="File">
+            <fptr FILEID="sword-mets-file-1" />
+         </div>
+      </div>
+   </structMap>
+</mets>
+
