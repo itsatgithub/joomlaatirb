@@ -31,6 +31,13 @@ class ScienceModelPublication extends JModel
 	var $_data = null;
 
 	/**
+	 * Abstract data
+	 *
+	 * @var array
+	 */
+	var $_xmldata = null;
+	
+	/**
 	 * Constructor
 	 *
 	 * @since 1.5
@@ -44,10 +51,10 @@ class ScienceModelPublication extends JModel
 	}
 
 	/**
-	 * Method to set the thesis identifier
+	 * Method to set the publication identifier
 	 *
 	 * @access	public
-	 * @param	int Thesis identifier
+	 * @param	int publication identifier
 	 */
 	function setId($id)
 	{
@@ -56,13 +63,13 @@ class ScienceModelPublication extends JModel
 	}
 
 	/**
-	 * Method to get a thesis
+	 * Method to get a publication
 	 *
 	 * @since 1.5
 	 */
 	function &getData()
 	{
-		// Load the thesis data
+		// Load the publication data
 		if ($this->_loadData())
 		{
 			// Nothing to be done in our case
@@ -453,5 +460,5 @@ class ScienceModelPublication extends JModel
 		}
 		return true;
 	}
-
+	
 }

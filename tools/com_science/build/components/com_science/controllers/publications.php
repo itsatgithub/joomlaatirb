@@ -70,8 +70,7 @@ class ScienceControllerPublications extends JController
 		}
 		$this->setRedirect(JRoute::_('index.php?option=com_science&view=publications', false), $msg);
 	}
-
-	
+		
 }
 
 ?>

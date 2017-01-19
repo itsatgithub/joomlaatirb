@@ -63,7 +63,7 @@
       {
           //Código extraido de JFusion
           ob_start();
-          $url = 'https://github.com/itsatgithub/joomlaatirb/tree/master/administrator/components/com_science/science.xml';
+          $url = 'https://joomlaatirb.googlecode.com/svn/trunk/administrator/components/com_science/science.xml';
           $username = "";
           $password = "";
           

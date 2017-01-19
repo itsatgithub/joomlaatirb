@@ -225,5 +225,6 @@ class ScienceControllerPublication extends JController
 		}
 		
 	}
+		
 }
 ?>
