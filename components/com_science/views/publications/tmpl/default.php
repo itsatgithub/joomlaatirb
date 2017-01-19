@@ -77,7 +77,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 			</th>
 			<th width="5%" height="20" scope='col'><?php echo JHTML::_('grid.sort', 'Year', 'year', $this->lists['order_Dir'], $this->lists['order'] ); ?>
 			</th>
-			<th scope='col' width="10%"></th>
+			<th scope='col' width="12%"></th>
 		</tr>
 	</thead>
 	<?php
@@ -86,6 +86,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 		$item =& $this->items[$i];
 		$layout = ($item->type_id == '3')?'bookchapter':'paper';
 		$link = JRoute::_( 'index.php?option=com_science&view=publication&layout='.$layout.'&id=' . $item->id );
+		$xml_link = JRoute::_( 'index.php?option=com_science&view=publication&format=raw&id=' . $item->id );
 		$del_link = JRoute::_( 'index.php?option=com_science&controller=publications&task=delete&id=' . $item->id );
 
 		$extranet = ($item->selected_extranet ? 'Yes' : 'No');
@@ -101,13 +102,22 @@ defined('_JEXEC') or die('Restricted access'); ?>
 			<td height="20"><?php echo $this->escape($item->volume); ?></td>
 			<td height="20"><?php echo $this->escape($item->pages); ?></td>
 			<td height="20"><?php echo $this->escape($item->year); ?></td>
-			<td height="20" align="center"><a href='<?php echo $link; ?>'
+			<td height="30" align="center">
+			<a href='<?php echo $link; ?>'
 				title="<?php echo JText::_( 'MODIFY' ); ?>"><img border='0'
-				src='images/M_images/edit.png'></a> <?php if ( $this->rights == 'write' ) { ?>
+				src='images/M_images/edit.png'>
+			</a>
+			<a href='<?php echo $xml_link; ?>'
+				title="<?php echo JText::_( 'TO_XML' ); ?>"><img border='0'
+				src='images/M_images/edit_unpublished.png'>
+			</a>
+			<?php if ( $this->rights == 'write' ) { ?>
 			<a href='<?php echo $del_link; ?>'
 				onClick="return confirm('<?php echo JText::_( 'ARE_YOU_SURE' ); ?>');"
 				title="<?php echo JText::_( 'DELETE' ); ?>"><img border='0'
-				src='administrator/images/publish_x.png'></a> <?php } ?></td>
+				src='administrator/images/publish_x.png'>
+			</a>
+			<?php } ?></td>
 		</tr>
 	</tbody>
 	<?php
