@@ -144,6 +144,10 @@ class ScienceViewReport extends JView
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_IF_JOINT_PUBLICATION' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_IMPACT_FACTOR' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_QUARTILE' ));
+						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_JCRD' ));
+						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_SJRIF' ));
+						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_SJRQ' ));
+						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_SJRD' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_CITATIONS' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_PHD_SELECTED_PUBLICATION' ));
 						$worksheet->write(0, $j++, JText::_( 'PUBLICATION_IRB_SELECTED_PUBLICATION' ));
@@ -183,6 +187,10 @@ class ScienceViewReport extends JView
 							$worksheet->write( $i+1, $j++, $item->joint_publication_description );
 							$worksheet->write( $i+1, $j++, $item->impact_factor );
 							$worksheet->write( $i+1, $j++, $item->quartile );
+							$worksheet->write( $i+1, $j++, $item->jcrd );
+							$worksheet->write( $i+1, $j++, $item->sjrif );
+							$worksheet->write( $i+1, $j++, $item->sjrq );
+							$worksheet->write( $i+1, $j++, $item->sjrd );
 							$worksheet->write( $i+1, $j++, $item->citations );
 							$worksheet->write( $i+1, $j++, ($item->phd_selected_publication) ? JText::_( 'YES' ) : JText::_( 'NO' ));
 							$worksheet->write( $i+1, $j++, ($item->irb_selected_publication) ? JText::_( 'YES' ) : JText::_( 'NO' ));
