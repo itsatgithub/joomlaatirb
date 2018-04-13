@@ -81,7 +81,7 @@
 		<td><?php if ($this->rights == 'write'): ?> <input class='required '
 			type="text" name="authors"
 			value="<?php echo $this->publication->authors; ?>" size="60"
-			maxlength="250" /> <?php echo JHTML::_('tooltip',  JText::_( 'PUBLICATION_AUTHORS_TOOLTIP' ) ); ?>
+			maxlength="500" /> <?php echo JHTML::_('tooltip',  JText::_( 'PUBLICATION_AUTHORS_TOOLTIP' ) ); ?>
 			<?php else:
 			echo $this->publication->authors;
 			endif; ?></td>

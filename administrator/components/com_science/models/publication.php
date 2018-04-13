@@ -123,6 +123,8 @@ class ScienceModelPublication extends JModel
 		. ' AND pgl.group_leader_id = ' . $group_leader_id
 		;
 		$this->_db->setQuery( $query );
+		echo $this->_db->getQuery();
+		break;
 		if(!$this->_db->query()) {
 			$this->setError($this->_db->getErrorMsg());
 			return false;
