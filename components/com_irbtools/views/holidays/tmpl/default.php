@@ -12,6 +12,8 @@ JHTML::stylesheet('holidays.css', 'components/com_irbtools/css/');
 <?php endif; ?>
 
 <?php echo JText::_( 'HOLIDAYS_TOP_INTRO' ); ?>
+
+<!-- Roberto 2018-04-18 Pilar pide eliminar toda esta información de la página
 <br>
 <?php echo JText::_( 'HOLIDAYS_CONTACT' ); ?>
 <br><br>
