@@ -47,7 +47,7 @@ if (defined($opt_v)){$verbose=1;}
 if (defined($opt_a)){$admin_bind=1;}
 
 
-$ldap = Net::LDAP->new( 'irbsvr4.irb.pcb.ub.es' ) or die "$@";
+$ldap = Net::LDAP->new( 'irbldap1.irb.pcb.ub.es' ) or die "$@";
 
 if ($admin_bind) {
     $mesg = $ldap->bind( 'cn=admin, o=irbbarcelona',

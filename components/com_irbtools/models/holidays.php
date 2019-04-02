@@ -37,7 +37,7 @@ class IrbtoolsModelHolidays extends JModel
 		$user =& JFactory::getUser();
 		
 		// busco el usuario en el directorio
-		$edir = ldap_connect("irbsvr4.irb.pcb.ub.es");
+		$edir = ldap_connect("irbldap1.irb.pcb.ub.es");
 		$ldaprdn  = 'cn=admin,o=irbbarcelona';
 		$ldappass = 'irbbarcelona';  // associated password
     	$edir_bind = ldap_bind($edir, $ldaprdn, $ldappass);   	
